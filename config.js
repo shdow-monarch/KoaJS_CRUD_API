@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-mongoose.connect(
-  "mongodb+srv://shdow-monarch:Bhar%402001@db.uci5gvf.mongodb.net/crudApi"
-);
+mongoose.connect(process.env.URL, { useNewUrlParser: true });
 const db = mongoose.connection;
 
 db.on("error", (error) => console.log(error));
