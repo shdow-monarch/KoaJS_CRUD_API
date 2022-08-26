@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +22,8 @@
     "lodash": "^4.17.21",
     "mongodb": "^4.9.0",
     "mongoose": "^6.5.3"
+  },
+    "engines": {
+    "node": "12.14.1"
   }
 }
