@@ -8,8 +8,7 @@ const ProductController = {
       ctx.response.status = 200;
       ctx.body = products;
     } catch (error) {
-      ctx.response.status = 500;
-      ctx.body = error.message;
+      ctx.body = error;
     }
   },
   createProduct: async (ctx) => {
@@ -29,8 +28,7 @@ const ProductController = {
       ctx.response.status = 200;
       ctx.body = product;
     } catch (error) {
-      ctx.response.status = 500;
-      ctx.body = error.message;
+      ctx.body = error;
     }
   },
   updateProduct: async (ctx) => {
@@ -53,8 +51,7 @@ const ProductController = {
       ctx.response.status = 200;
       ctx.body = "Product deleted";
     } catch (error) {
-      ctx.response.status = 500;
-      ctx.body = error.message;
+      ctx.body = error;
     }
   },
 };

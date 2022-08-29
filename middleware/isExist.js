@@ -11,7 +11,6 @@ module.exports = async (ctx, next) => {
       ctx.body = "Product not found";
     }
   } catch (error) {
-    ctx.response.status = 500;
-    ctx.body = error.message;
+    ctx.body = error
   }
 };
